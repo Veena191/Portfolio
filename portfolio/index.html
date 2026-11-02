@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Billakanti Veena  — Full-Stack Web Developer, Hyderabad</title>
+  <meta name="description" content="Portfolio of Billakanti Veena, a web developer from Hyderabad building web applications, backend systems and AI/ML projects with JavaScript, Node.js, Flask and Bootstrap.">
+  <meta name="author" content="Billakanti Veena">
+  <meta name="theme-color" content="#070d1c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Billakanti Veena — Full-Stack Web Developer">
+  <meta property="og:description" content="Web applications, backend systems and AI/ML projects. 16 projects, from legal directories and rental platforms to computer-vision tools.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Billakanti Veena",
+    "jobTitle": "Full-Stack Web Developer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressRegion": "Telangana", "addressCountry": "IN" },
+    "alumniOf": "AVN Institute of Engineering and Technology",
+    "worksFor": { "@type": "Organization", "name": "Business Labs" },
+    "sameAs": ["https://github.com/veena-blabs", "https://www.linkedin.com/in/veena2004"],
+    "knowsAbout": ["JavaScript", "Node.js", "Bootstrap", "HTML", "CSS", "React", "Flask", "Machine Learning", "Computer Vision"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <img src="assets/favicon.svg" alt="" width="64" height="64">
+    <span>Loading portfolio</span>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Billakanti Veena — home">
+        <img src="assets/favicon.svg" alt="" width="34" height="34">
+        <span>Billakanti Veena</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#skills" data-nav>Skills</a></li>
+        <li><a href="#projects" data-nav>Projects</a></li>
+        <li><a href="#journey" data-nav>Journey</a></li>
+        <li><a href="#contact" data-nav class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title" style="
+    padding-top: 50px;
+    padding-bottom: 50px; ">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-a"></span><span class="blob blob-b"></span><span class="grid-overlay"></span>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> Web Developer </p>
+          <h1 id="hero-title" class="hero-title">
+            <span class="line"><span>Billakanti</span></span>
+            <span class="line"><span><em>Veena</em></span></span>
+          </h1>
+          <p class="hero-role">Full-Stack Web Developer <span class="sep">|</span> <span class="mono">JavaScript · Node.js · Flask · Bootstrap</span></p>
+          <p class="hero-intro">
+            I'm a web developer based in Hyderabad who turns complex ideas into simple, scalable products.
+            I've built 16 projects across directories, marketplaces, business tools and computer-vision experiments,
+            using HTML, CSS, JavaScript, Bootstrap, Node.js and Python.
+          </p>
+          <p class="hero-rotator" aria-live="off">I build <span class="rotator" id="rotator">web applications</span><span class="caret" aria-hidden="true"></span></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore Projects <span aria-hidden="true">→</span></a>
+          </div>
+          <ul class="social-row" aria-label="Profiles">
+            <li><a href="https://github.com/Veena191" target="_blank" rel="noopener noreferrer" data-icon="github">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/veena2004" target="_blank" rel="noopener noreferrer" data-icon="linkedin">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit" aria-hidden="true"></div>
+          <img src="assets/visuals/hero-veena.svg " alt="Illustration of a veena instrument whose strings dissolve into glowing code and circuit traces" width="800" height="640" fetchpriority="high">
+          <div class="chip-float chip-1" aria-hidden="true">Node.js</div>
+          <div class="chip-float chip-2" aria-hidden="true">Flask</div>
+          <div class="chip-float chip-3" aria-hidden="true">Computer Vision</div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- MARQUEE (section transition) -->
+    <div class="marquee" aria-hidden="true" style="
+    padding-top: 10px;
+    padding-bottom: 10px; "><div class="marquee-track" id="marquee-track"></div></div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title"style="
+    padding-bottom: 40px;
+    padding-top: 40px;">
+      <div class="container about-grid">
+        <header class="section-head" data-reveal>
+          <p class="section-no">01 <span>About</span></p>
+          <h2 id="about-title">Turning messy requirements into <em>simple, scalable</em> products.</h2>
+        </header>
+        <div class="about-body" data-reveal>
+          <p>I'm a passionate software engineer who loves transforming complex ideas into simple, efficient and scalable solutions. With a strong foundation in coding, problem-solving and modern technologies, I strive to create impactful user experiences.</p>
+          <p>I'm currently a web development trainee at Business Labs, and I'm most at home where real users meet messy requirements: search, bookings, records and automation. I'm always eager to learn, collaborate and contribute to innovative projects that make a difference.</p>
+          <ul class="stats" id="stats" aria-label="At a glance"></ul>
+        </div>
+        <aside class="profile-card glass" data-reveal aria-label="Profile summary">
+          
+          <h3>Billakanti Veena</h3>
+          <p class="muted">Web Development Trainee</p>
+          <dl>
+            <div><dt>Location</dt><dd>Hyderabad, Telangana, India</dd></div>
+            <div><dt>Degree</dt><dd>B.Tech, Computer Science and Engineering</dd></div>
+            <div><dt>College</dt><dd>AVN Institute of Engineering and Technology</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="section section-tight" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-no">02 <span>What I do</span></p>
+          <h2 id="services-title">Four things I <em>build</em>.</h2>
+        </header>
+        <div class="services" id="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS / TECHNICAL EXPERTISE -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-no">03 <span>Technical expertise</span></p>
+          <h2 id="skills-title">Tools I work with, <em>grouped by craft</em>.</h2>
+          <p class="muted lead">Cards marked <span class="badge-inline">Top skill</span> are the three skills listed at the top of my LinkedIn profile.</p>
+        </header>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head" data-reveal; >
+          <p class="section-no">04 <span>Projects</span></p>
+          <h2 id="projects-title">Sixteen projects, <em>four to start with</em>.</h2>
+          <p class="muted lead">Ranked to show range first: machine learning, a two-sided marketplace, an AI legal directory and computer vision, then full-stack apps, utilities and learning work.</p>
+        </header>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects by category"></div>
+        <p class="result-count" id="result-count" role="status" aria-live="polite"></p>
+        <div class="project-grid" id="project-grid"></div>
+        <noscript><p>Projects load with JavaScript. Browse them all on <a href="https://github.com/veena-blabs">GitHub</a>.</p></noscript>
+      </div>
+    </section>
+
+    <!-- JOURNEY + EDUCATION -->
+    <section class="section" id="journey" aria-labelledby="journey-title">
+      <div class="container two-col">
+        <div>
+          <header class="section-head" data-reveal>
+            <p class="section-no">05 <span>Professional journey</span></p>
+            <h2 id="journey-title">Where I've been <em>learning by building</em>.</h2>
+          </header>
+          <ol class="timeline" id="timeline"></ol>
+        </div>
+        <div id="education">
+          <header class="section-head" data-reveal>
+            <p class="section-no">06 <span>Education</span></p>
+            <h2>Academic <em>foundation</em>.</h2>
+          </header>
+          <ol class="timeline timeline-edu" id="edu-list"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB / LINKEDIN -->
+    <section class="section section-tight" id="connect" aria-labelledby="connect-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-no">07 <span>Find me online</span></p>
+          <h2 id="connect-title">Code on <em>GitHub</em>, story on <em>LinkedIn</em>.</h2>
+        </header>
+        <div class="connect-grid">
+          <a class="connect-card glass" href="https://github.com/Veena191" target="_blank" rel="noopener noreferrer" data-reveal>
+            <span class="connect-icon" data-icon="github" aria-hidden="true"></span>
+            <h3>GitHub</h3>
+            <p class="mono">@veena191</p>
+            <p class="muted">Source code for the 16 projects shown on this page.</p>
+            <span class="link-arrow">Open profile <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="connect-card glass" href="https://www.linkedin.com/in/veena2004" target="_blank" rel="noopener noreferrer" data-reveal>
+            <span class="connect-icon" data-icon="linkedin" aria-hidden="true"></span>
+            <h3>LinkedIn</h3>
+            <p class="mono">veena2004</p>
+            <p class="muted">Experience, education and professional updates.</p>
+            <span class="link-arrow">Open profile <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-name" aria-hidden="true">BILLAKANTI VEENA</div>
+    <div class="container footer-row">
+      <p>© <span id="year">2026</span> Billakanti Veena · Hyderabad, India</p>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/Veena191" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/veena2004" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top" hidden>↑</button>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dlg-title">
+    <form method="dialog"><button class="dlg-close" aria-label="Close project details">✕</button></form>
+    <img id="dlg-img" src="assets/visuals/criminal-investigation-tracker.svg" alt="" width="800" height="450">
+    <div class="dlg-body">
+      <p class="eyebrow" id="dlg-tier"></p>
+      <h3 id="dlg-title"></h3>
+      <p id="dlg-summary"></p>
+      <p class="dlg-label">Technology &amp; focus</p>
+      <ul class="chips" id="dlg-stack"></ul>
+      <p class="dlg-label">What it does</p>
+      <ul class="chips chips-soft" id="dlg-focus"></ul>
+      <div class="dlg-actions">
+        <a class="btn btn-primary" id="dlg-link" target="_blank" rel="noopener noreferrer">View repository on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/data/profile.js"></script>
+  <script src="js/data/projects.js"></script>
+  <script src="js/components/icons.js"></script>
+  <script src="js/components/projectCard.js"></script>
+  <script src="js/components/filters.js"></script>
+  <script src="js/components/sections.js"></script>
+  <script src="js/components/nav.js"></script>
+  <script src="js/components/contactForm.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
